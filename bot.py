@@ -22,7 +22,7 @@ moment_worker = []
 
 
 #start
-@decodebot.on(events.NewMessage(pattern="^/start$"))
+@decodebot.on(events.NewMessage(pattern="^/vip$"))
 async def start(event):
   await event.reply("^_^ Hey, Welcome To TAG Help Bot's Menu\nI can tag 15,000 Members in Group and 300 Members In Channel.\nNeed Help /help ",
                     buttons=(
@@ -38,7 +38,7 @@ async def start(event):
                    )
 
 #help
-@decodebot.on(events.NewMessage(pattern="^/help$"))
+@decodebot.on(events.NewMessage(pattern="^/sos$"))
 async def help(event):
   helptext = "**Tag Help Bot's Help Menu**\n\nCommand: /all \n You can use this command with text you want to tell others. \n`Example: /all Good morning!` \nYou can use this command as an answer. any message Bot will tag users to replied message"
   await event.reply(helptext,
